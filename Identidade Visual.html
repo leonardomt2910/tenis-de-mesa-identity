@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Harau Tênis de Mesa — Identidade Visual</title>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,600;0,700;0,800;0,900;1,800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --red: #D01A1A;
+    --red-dark: #A01010;
+    --black: #0F0F0F;
+    --off-white: #F5F2EE;
+    --gray: #888;
+  }
+  body { font-family: 'Barlow', sans-serif; background: #1a1a1a; color: var(--off-white); min-height: 100vh; }
+  .page { max-width: 980px; margin: 0 auto; padding: 48px 24px 80px; }
+  .section-label { font-family: 'Barlow Condensed', sans-serif; font-size: 11px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gray); margin-bottom: 20px; }
+  .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px; }
+  .card { border-radius: 12px; display: flex; align-items: center; justify-content: center; padding: 40px 24px; overflow: hidden; }
+  .card-dark { background: var(--black); }
+  .card-light { background: var(--off-white); }
+  .card-red { background: var(--red); }
+  .divider { border: none; border-top: 1px solid #2e2e2e; margin: 40px 0; }
+  h1 { font-family: 'Barlow Condensed', sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gray); margin-bottom: 32px; padding-bottom: 12px; border-bottom: 1px solid #2e2e2e; }
+  .tshirt-wrap { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-top: 4px; }
+  .palette { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 40px; }
+  .swatch { display: flex; flex-direction: column; gap: 8px; }
+  .swatch-color { width: 80px; height: 80px; border-radius: 8px; }
+  .swatch-name { font-family: 'Barlow Condensed', sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 0.05em; color: var(--off-white); }
+  .swatch-hex { font-size: 11px; color: var(--gray); font-family: monospace; letter-spacing: 0.05em; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <h1>Identidade Visual — Harau Tênis de Mesa</h1>
+
+  <!-- ── LOGO PRINCIPAL ── -->
+  <div class="section-label">Logo Principal</div>
+  <div class="grid-2" style="margin-bottom:16px">
+
+    <!-- FUNDO ESCURO -->
+    <div class="card card-dark" style="min-height:260px">
+      <svg width="480" height="190" viewBox="0 0 480 190" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- === RAQUETE === -->
+        <!-- Sombra da raquete -->
+        <ellipse cx="74" cy="78" rx="38" ry="50" fill="#1a1a1a" transform="rotate(-20 74 78)" opacity="0.4"/>
+        <!-- Borracha vermelha da raquete (oval alongada) -->
+        <ellipse cx="72" cy="76" rx="38" ry="50" fill="#D01A1A" transform="rotate(-20 72 76)"/>
+        <!-- Borda preta -->
+        <ellipse cx="72" cy="76" rx="38" ry="50" fill="none" stroke="#0a0a0a" stroke-width="3" transform="rotate(-20 72 76)"/>
+        <!-- Brilho sutil na borracha -->
+        <ellipse cx="58" cy="50" rx="16" ry="22" fill="white" opacity="0.12" transform="rotate(-20 58 50)"/>
+        <!-- Cabo da raquete (simples e fino, encaixado corretamente) -->
+        <path d="M82 119 L85 155 Q86 165 81 168 Q76 171 71 168 L69 123 Z" fill="#2d2d2d" stroke="#0a0a0a" stroke-width="1.5"/>
+        <!-- Detalhe de madeira no cabo -->
+        <path d="M78 119 L81 155 Q82 165 78 168 Q75 171 72 168 L70 123 Z" fill="#4a4a4a" opacity="0.6"/>
+
+        <!-- === BOLA === -->
+        <!-- Sombra da bola -->
+        <circle cx="136" cy="38" r="16" fill="#0a0a0a" opacity="0.3" transform="translate(2,3)"/>
+        <!-- Bola branca -->
+        <circle cx="136" cy="36" r="16" fill="white"/>
+        <!-- Brilho da bola -->
+        <circle cx="130" cy="30" r="5" fill="white" opacity="0.5"/>
+        <!-- Costura da bola (seam) — dois arcos perpendiculares típicos de bola de tênis de mesa -->
+        <path d="M120 36 Q136 28 152 36" stroke="#cccccc" stroke-width="1.5" fill="none"/>
+        <path d="M120 36 Q136 44 152 36" stroke="#cccccc" stroke-width="1.5" fill="none"/>
+        <path d="M136 20 Q144 36 136 52" stroke="#dddddd" stroke-width="1.2" fill="none" opacity="0.6"/>
+        <!-- Rastros de velocidade (bola em movimento) -->
+        <line x1="100" y1="22" x2="118" y2="24" stroke="#D01A1A" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+        <line x1="96" y1="30" x2="116" y2="31" stroke="#D01A1A" stroke-width="2.5" stroke-linecap="round" opacity="0.5"/>
+        <line x1="100" y1="38" x2="116" y2="38" stroke="#D01A1A" stroke-width="2" stroke-linecap="round" opacity="0.35"/>
+        <line x1="103" y1="46" x2="117" y2="44" stroke="#D01A1A" stroke-width="1.5" stroke-linecap="round" opacity="0.2"/>
+
+        <!-- === TIPOGRAFIA === -->
+        <text x="162" y="94" font-family="'Barlow Condensed', sans-serif" font-size="72" font-weight="900" font-style="italic" fill="white" letter-spacing="-2">HARAU</text>
+        <line x1="162" y1="103" x2="480" y2="103" stroke="#D01A1A" stroke-width="2.5"/>
+        <text x="163" y="122" font-family="'Barlow Condensed', sans-serif" font-size="14" font-weight="600" fill="#bbbbbb" letter-spacing="4">TÊNIS DE MESA</text>
+        <text x="163" y="138" font-family="'Barlow Condensed', sans-serif" font-size="11" font-weight="400" fill="#666666" letter-spacing="2.5">ESCOLINHA</text>
+      </svg>
+    </div>
+
+    <!-- FUNDO CLARO -->
+    <div class="card card-light" style="min-height:260px">
+      <svg width="480" height="190" viewBox="0 0 480 190" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="74" cy="78" rx="38" ry="50" fill="#e0ddd9" transform="rotate(-20 74 78)" opacity="0.5"/>
+        <ellipse cx="72" cy="76" rx="38" ry="50" fill="#D01A1A" transform="rotate(-20 72 76)"/>
+        <ellipse cx="72" cy="76" rx="38" ry="50" fill="none" stroke="#0a0a0a" stroke-width="3" transform="rotate(-20 72 76)"/>
+        <ellipse cx="58" cy="50" rx="16" ry="22" fill="white" opacity="0.12" transform="rotate(-20 58 50)"/>
+        <path d="M82 119 L85 155 Q86 165 81 168 Q76 171 71 168 L69 123 Z" fill="#2d2d2d" stroke="#0a0a0a" stroke-width="1.5"/>
+        <path d="M78 119 L81 155 Q82 165 78 168 Q75 171 72 168 L70 123 Z" fill="#4a4a4a" opacity="0.6"/>
+        <circle cx="136" cy="36" r="16" fill="white" stroke="#cccccc" stroke-width="2"/>
+        <circle cx="130" cy="30" r="5" fill="white" opacity="0.6"/>
+        <path d="M120 36 Q136 28 152 36" stroke="#bbbbbb" stroke-width="1.5" fill="none"/>
+        <path d="M120 36 Q136 44 152 36" stroke="#bbbbbb" stroke-width="1.5" fill="none"/>
+        <path d="M136 20 Q144 36 136 52" stroke="#cccccc" stroke-width="1.2" fill="none" opacity="0.6"/>
+        <line x1="100" y1="22" x2="118" y2="24" stroke="#D01A1A" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+        <line x1="96" y1="30" x2="116" y2="31" stroke="#D01A1A" stroke-width="2.5" stroke-linecap="round" opacity="0.5"/>
+        <line x1="100" y1="38" x2="116" y2="38" stroke="#D01A1A" stroke-width="2" stroke-linecap="round" opacity="0.35"/>
+        <text x="162" y="94" font-family="'Barlow Condensed', sans-serif" font-size="72" font-weight="900" font-style="italic" fill="#0F0F0F" letter-spacing="-2">HARAU</text>
+        <line x1="162" y1="103" x2="480" y2="103" stroke="#D01A1A" stroke-width="2.5"/>
+        <text x="163" y="122" font-family="'Barlow Condensed', sans-serif" font-size="14" font-weight="600" fill="#444444" letter-spacing="4">TÊNIS DE MESA</text>
+        <text x="163" y="138" font-family="'Barlow Condensed', sans-serif" font-size="11" font-weight="400" fill="#999999" letter-spacing="2.5">ESCOLINHA</text>
+      </svg>
+    </div>
+  </div>
+
+  <!-- FUNDO VERMELHO + ÍCONES -->
+  <div class="grid-2" style="margin-bottom:40px">
+    <div class="card card-red" style="min-height:200px">
+      <svg width="480" height="190" viewBox="0 0 480 190" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="74" cy="78" rx="38" ry="50" fill="#1a1a1a" transform="rotate(-20 74 78)" opacity="0.3"/>
+        <ellipse cx="72" cy="76" rx="38" ry="50" fill="#0F0F0F" transform="rotate(-20 72 76)"/>
+        <ellipse cx="72" cy="76" rx="38" ry="50" fill="none" stroke="white" stroke-width="2" opacity="0.12" transform="rotate(-20 72 76)"/>
+        <ellipse cx="58" cy="50" rx="16" ry="22" fill="white" opacity="0.08" transform="rotate(-20 58 50)"/>
+        <path d="M82 119 L85 155 Q86 165 81 168 Q76 171 71 168 L69 123 Z" fill="#2d2d2d" stroke="rgba(0,0,0,0.3)" stroke-width="1.5"/>
+        <path d="M78 119 L81 155 Q82 165 78 168 Q75 171 72 168 L70 123 Z" fill="#4a4a4a" opacity="0.3"/>
+        <circle cx="136" cy="36" r="16" fill="white" opacity="0.95"/>
+        <path d="M120 36 Q136 28 152 36" stroke="#ddd" stroke-width="1.5" fill="none" opacity="0.5"/>
+        <path d="M120 36 Q136 44 152 36" stroke="#ddd" stroke-width="1.5" fill="none" opacity="0.5"/>
+        <line x1="100" y1="22" x2="118" y2="24" stroke="white" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+        <line x1="96" y1="30" x2="116" y2="31" stroke="white" stroke-width="2.5" stroke-linecap="round" opacity="0.4"/>
+        <line x1="100" y1="38" x2="116" y2="38" stroke="white" stroke-width="2" stroke-linecap="round" opacity="0.25"/>
+        <text x="162" y="94" font-family="'Barlow Condensed', sans-serif" font-size="72" font-weight="900" font-style="italic" fill="white" letter-spacing="-2">HARAU</text>
+        <line x1="162" y1="103" x2="480" y2="103" stroke="white" stroke-width="2" opacity="0.35"/>
+        <text x="163" y="122" font-family="'Barlow Condensed', sans-serif" font-size="14" font-weight="600" fill="white" letter-spacing="4" opacity="0.9">TÊNIS DE MESA</text>
+        <text x="163" y="138" font-family="'Barlow Condensed', sans-serif" font-size="11" font-weight="400" fill="white" letter-spacing="2.5" opacity="0.55">ESCOLINHA</text>
+      </svg>
+    </div>
+
+    <!-- Ícone isolado – dark / light -->
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px;">
+      <div class="card card-dark" style="border-radius:12px; padding:28px; min-height:140px;">
+        <svg width="100" height="120" viewBox="0 0 100 130" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <ellipse cx="44" cy="56" rx="32" ry="42" fill="#D01A1A" transform="rotate(-18 44 56)"/>
+          <ellipse cx="44" cy="56" rx="32" ry="42" fill="none" stroke="#0a0a0a" stroke-width="2.5" transform="rotate(-18 44 56)"/>
+          <ellipse cx="36" cy="42" rx="14" ry="18" fill="white" opacity="0.1" transform="rotate(-18 36 42)"/>
+          <path d="M57 87 L59 110 Q60 120 56 123 Q52 125 48 123 L47 90 Z" fill="#2d2d2d" stroke="#0a0a0a" stroke-width="1"/>
+          <path d="M54 87 L57 110 Q58 120 55 123 Q52 125 49 123 L48 90 Z" fill="#4a4a4a" opacity="0.5"/>
+          <!-- ball -->
+          <circle cx="82" cy="24" r="13" fill="white"/>
+          <path d="M70 24 Q82 17 94 24" stroke="#ccc" stroke-width="1.2" fill="none"/>
+          <path d="M70 24 Q82 31 94 24" stroke="#ccc" stroke-width="1.2" fill="none"/>
+          <!-- speed lines -->
+          <line x1="54" y1="14" x2="67" y2="16" stroke="#D01A1A" stroke-width="2.5" stroke-linecap="round" opacity="0.8"/>
+          <line x1="51" y1="22" x2="66" y2="23" stroke="#D01A1A" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+          <line x1="53" y1="30" x2="66" y2="30" stroke="#D01A1A" stroke-width="1.5" stroke-linecap="round" opacity="0.3"/>
+        </svg>
+      </div>
+      <div class="card card-light" style="border-radius:12px; padding:28px; min-height:140px;">
+        <svg width="100" height="120" viewBox="0 0 100 130" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <ellipse cx="44" cy="56" rx="32" ry="42" fill="#D01A1A" transform="rotate(-18 44 56)"/>
+          <ellipse cx="44" cy="56" rx="32" ry="42" fill="none" stroke="#0a0a0a" stroke-width="2.5" transform="rotate(-18 44 56)"/>
+          <ellipse cx="36" cy="42" rx="14" ry="18" fill="white" opacity="0.12" transform="rotate(-18 36 42)"/>
+          <path d="M57 87 L59 110 Q60 120 56 123 Q52 125 48 123 L47 90 Z" fill="#2d2d2d" stroke="#0a0a0a" stroke-width="1"/>
+          <path d="M54 87 L57 110 Q58 120 55 123 Q52 125 49 123 L48 90 Z" fill="#4a4a4a" opacity="0.5"/>
+          <circle cx="82" cy="24" r="13" fill="white" stroke="#bbb" stroke-width="1.5"/>
+          <path d="M70 24 Q82 17 94 24" stroke="#aaa" stroke-width="1.2" fill="none"/>
+          <path d="M70 24 Q82 31 94 24" stroke="#aaa" stroke-width="1.2" fill="none"/>
+          <line x1="54" y1="14" x2="67" y2="16" stroke="#D01A1A" stroke-width="2.5" stroke-linecap="round" opacity="0.9"/>
+          <line x1="51" y1="22" x2="66" y2="23" stroke="#D01A1A" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+          <line x1="53" y1="30" x2="66" y2="30" stroke="#D01A1A" stroke-width="1.5" stroke-linecap="round" opacity="0.35"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- ── CAMISETAS ── -->
+  <div class="section-label">Aplicação em Camiseta</div>
+  <div class="tshirt-wrap" style="margin-bottom:40px">
+
+    <!-- Camiseta preta -->
+    <svg viewBox="0 0 260 290" width="230" height="256" xmlns="http://www.w3.org/2000/svg">
+      <path d="M80 22 L38 54 L8 84 L36 104 L36 268 L224 268 L224 104 L252 84 L222 54 L180 22 Q160 38 130 38 Q100 38 80 22Z" fill="#111" stroke="#252525" stroke-width="1.5"/>
+      <path d="M80 22 Q100 38 130 38 Q160 38 180 22 Q165 46 130 46 Q95 46 80 22Z" fill="#1c1c1c"/>
+      <!-- logo na camiseta -->
+      <g transform="translate(73, 82) scale(0.52)">
+        <ellipse cx="44" cy="56" rx="32" ry="42" fill="#D01A1A" transform="rotate(-18 44 56)"/>
+        <ellipse cx="44" cy="56" rx="32" ry="42" fill="none" stroke="#0a0a0a" stroke-width="2.5" transform="rotate(-18 44 56)"/>
+        <ellipse cx="36" cy="42" rx="14" ry="18" fill="white" opacity="0.1" transform="rotate(-18 36 42)"/>
+        <path d="M57 87 L59 110 Q60 120 56 123 Q52 125 48 123 L47 90 Z" fill="#2d2d2d" stroke="#0a0a0a" stroke-width="1"/>
+        <path d="M54 87 L57 110 Q58 120 55 123 Q52 125 49 123 L48 90 Z" fill="#4a4a4a" opacity="0.5"/>
+        <circle cx="82" cy="24" r="13" fill="white"/>
+        <path d="M70 24 Q82 17 94 24" stroke="#ccc" stroke-width="1.2" fill="none"/>
+        <path d="M70 24 Q82 31 94 24" stroke="#ccc" stroke-width="1.2" fill="none"/>
+        <line x1="54" y1="14" x2="67" y2="16" stroke="#D01A1A" stroke-width="2.5" stroke-linecap="round" opacity="0.8"/>
+        <line x1="51" y1="22" x2="66" y2="23" stroke="#D01A1A" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+      </g>
+      <text x="130" y="152" text-anchor="middle" font-family="'Barlow Condensed', sans-serif" font-size="30" font-weight="900" font-style="italic" fill="white" letter-spacing="-0.5">HARAU</text>
+      <line x1="70" y1="157" x2="190" y2="157" stroke="#D01A1A" stroke-width="1.5"/>
+      <text x="130" y="170" text-anchor="middle" font-family="'Barlow Condensed', sans-serif" font-size="7.5" font-weight="600" fill="#999" letter-spacing="2.5">TÊNIS DE MESA</text>
+    </svg>
+
+    <!-- Camiseta vermelha -->
+    <svg viewBox="0 0 260 290" width="230" height="256" xmlns="http://www.w3.org/2000/svg">
+      <path d="M80 22 L38 54 L8 84 L36 104 L36 268 L224 268 L224 104 L252 84 L222 54 L180 22 Q160 38 130 38 Q100 38 80 22Z" fill="#C01515" stroke="#A01010" stroke-width="1.5"/>
+      <path d="M80 22 Q100 38 130 38 Q160 38 180 22 Q165 46 130 46 Q95 46 80 22Z" fill="#B01212"/>
+      <g transform="translate(73, 82) scale(0.52)">
+        <ellipse cx="44" cy="56" rx="32" ry="42" fill="#0F0F0F" transform="rotate(-18 44 56)"/>
+        <ellipse cx="44" cy="56" rx="32" ry="42" fill="none" stroke="white" stroke-width="2" opacity="0.1" transform="rotate(-18 44 56)"/>
+        <ellipse cx="36" cy="42" rx="14" ry="18" fill="white" opacity="0.06" transform="rotate(-18 36 42)"/>
+        <path d="M57 87 L59 110 Q60 120 56 123 Q52 125 48 123 L47 90 Z" fill="#2d2d2d" stroke="rgba(0,0,0,0.2)" stroke-width="1"/>
+        <path d="M54 87 L57 110 Q58 120 55 123 Q52 125 49 123 L48 90 Z" fill="#4a4a4a" opacity="0.3"/>
+        <circle cx="82" cy="24" r="13" fill="white" opacity="0.9"/>
+        <line x1="54" y1="14" x2="67" y2="16" stroke="white" stroke-width="2.5" stroke-linecap="round" opacity="0.7"/>
+        <line x1="51" y1="22" x2="66" y2="23" stroke="white" stroke-width="2" stroke-linecap="round" opacity="0.45"/>
+      </g>
+      <text x="130" y="152" text-anchor="middle" font-family="'Barlow Condensed', sans-serif" font-size="30" font-weight="900" font-style="italic" fill="white" letter-spacing="-0.5">HARAU</text>
+      <line x1="70" y1="157" x2="190" y2="157" stroke="white" stroke-width="1.5" opacity="0.35"/>
+      <text x="130" y="170" text-anchor="middle" font-family="'Barlow Condensed', sans-serif" font-size="7.5" font-weight="600" fill="white" letter-spacing="2.5" opacity="0.8">TÊNIS DE MESA</text>
+    </svg>
+
+    <!-- Camiseta branca -->
+    <svg viewBox="0 0 260 290" width="230" height="256" xmlns="http://www.w3.org/2000/svg">
+      <path d="M80 22 L38 54 L8 84 L36 104 L36 268 L224 268 L224 104 L252 84 L222 54 L180 22 Q160 38 130 38 Q100 38 80 22Z" fill="#F5F2EE" stroke="#ddd" stroke-width="1.5"/>
+      <path d="M80 22 Q100 38 130 38 Q160 38 180 22 Q165 46 130 46 Q95 46 80 22Z" fill="#e8e5e1"/>
+      <g transform="translate(73, 82) scale(0.52)">
+        <ellipse cx="44" cy="56" rx="32" ry="42" fill="#D01A1A" transform="rotate(-18 44 56)"/>
+        <ellipse cx="44" cy="56" rx="32" ry="42" fill="none" stroke="#0a0a0a" stroke-width="2.5" transform="rotate(-18 44 56)"/>
+        <ellipse cx="36" cy="42" rx="14" ry="18" fill="white" opacity="0.12" transform="rotate(-18 36 42)"/>
+        <path d="M57 87 L59 110 Q60 120 56 123 Q52 125 48 123 L47 90 Z" fill="#2d2d2d" stroke="#0a0a0a" stroke-width="1"/>
+        <path d="M54 87 L57 110 Q58 120 55 123 Q52 125 49 123 L48 90 Z" fill="#4a4a4a" opacity="0.5"/>
+        <circle cx="82" cy="24" r="13" fill="white" stroke="#bbb" stroke-width="1.5"/>
+        <path d="M70 24 Q82 17 94 24" stroke="#aaa" stroke-width="1.2" fill="none"/>
+        <path d="M70 24 Q82 31 94 24" stroke="#aaa" stroke-width="1.2" fill="none"/>
+        <line x1="54" y1="14" x2="67" y2="16" stroke="#D01A1A" stroke-width="2.5" stroke-linecap="round" opacity="0.9"/>
+        <line x1="51" y1="22" x2="66" y2="23" stroke="#D01A1A" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+      </g>
+      <text x="130" y="152" text-anchor="middle" font-family="'Barlow Condensed', sans-serif" font-size="30" font-weight="900" font-style="italic" fill="#0F0F0F" letter-spacing="-0.5">HARAU</text>
+      <line x1="70" y1="157" x2="190" y2="157" stroke="#D01A1A" stroke-width="1.5"/>
+      <text x="130" y="170" text-anchor="middle" font-family="'Barlow Condensed', sans-serif" font-size="7.5" font-weight="600" fill="#555" letter-spacing="2.5">TÊNIS DE MESA</text>
+    </svg>
+  </div>
+
+  <hr class="divider">
+
+  <!-- ── PALETA ── -->
+  <div class="section-label">Paleta de Cores</div>
+  <div class="palette">
+    <div class="swatch">
+      <div class="swatch-color" style="background:#D01A1A;"></div>
+      <div class="swatch-name">Vermelho Principal</div>
+      <div class="swatch-hex">#D01A1A</div>
+    </div>
+    <div class="swatch">
+      <div class="swatch-color" style="background:#A01010;"></div>
+      <div class="swatch-name">Vermelho Escuro</div>
+      <div class="swatch-hex">#A01010</div>
+    </div>
+    <div class="swatch">
+      <div class="swatch-color" style="background:#0F0F0F; border:1px solid #2e2e2e;"></div>
+      <div class="swatch-name">Preto</div>
+      <div class="swatch-hex">#0F0F0F</div>
+    </div>
+    <div class="swatch">
+      <div class="swatch-color" style="background:#c8a96e;"></div>
+      <div class="swatch-name">Madeira (cabo)</div>
+      <div class="swatch-hex">#C8A96E</div>
+    </div>
+    <div class="swatch">
+      <div class="swatch-color" style="background:#F5F2EE; border:1px solid #333;"></div>
+      <div class="swatch-name">Branco Quente</div>
+      <div class="swatch-hex">#F5F2EE</div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- ── TIPOGRAFIA ── -->
+  <div class="section-label">Tipografia</div>
+  <div style="display:flex; gap:40px; flex-wrap:wrap; margin-bottom:40px; align-items:flex-end;">
+    <div>
+      <div style="font-family:'Barlow Condensed',sans-serif; font-size:80px; font-weight:900; font-style:italic; line-height:1; color:white; letter-spacing:-2px;">HARAU</div>
+      <div style="font-size:11px; color:var(--gray); letter-spacing:0.1em; margin-top:8px;">Barlow Condensed — Black Italic / Título principal</div>
+    </div>
+    <div style="padding-bottom:12px;">
+      <div style="font-family:'Barlow Condensed',sans-serif; font-size:22px; font-weight:600; letter-spacing:5px; color:white;">TÊNIS DE MESA</div>
+      <div style="font-family:'Barlow Condensed',sans-serif; font-size:13px; font-weight:400; letter-spacing:3px; color:var(--gray); margin-top:6px;">ESCOLINHA</div>
+      <div style="font-size:11px; color:var(--gray); letter-spacing:0.1em; margin-top:10px;">Barlow Condensed — SemiBold / Regular</div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
